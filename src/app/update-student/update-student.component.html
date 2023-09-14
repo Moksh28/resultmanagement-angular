@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
+
+
+<a href="/student-dashboard" class="btn btn-info" style="margin-top:5px;">Back</a>
+<h4>Edit Student-Result</h4>
+
+<!-- <div *ngIf="alert" class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>Success !</strong> Student details has been updated successfully !.
+    <button (click)="closeAlert()" type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div> -->
+
+  
+
+<form [formGroup]="editStudent" class="addStu" (ngSubmit)="collection()" >
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Roll No. : </label>
+      <input type="number" name="roll" required class="form-control" id="exampleInputEmail1" formControlName="rollno">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Name : </label>
+        <input type="text" name="name" required class="form-control" id="exampleInputEmail1" formControlName="name">
+      </div>
+      
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Date of Birth : </label>
+        <input type="date" name="dob" class="form-control" id="exampleInputEmail1" formControlName="dob">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Score : </label>
+        <input type="number" name="score" required class="form-control" id="exampleInputEmail1" formControlName="score">
+      </div>
+    <button type="submit" class="btn btn-success">Update</button>
+   
+</form>

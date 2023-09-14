@@ -1,0 +1,41 @@
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<a href="" class="btn btn-info" style="margin-top:5px;">Back</a>
+
+  <button class="btn btn-success" routerLink="/addstudent" style="margin-left: 70%;
+  margin-top: 5px;"> Add Student </button>
+
+
+<h4 >All Students</h4>
+<div class="tableDiv">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Roll No.</th>
+        <th scope="col">Name</th>       
+        <th scope="col">Date of Birth</th>
+        <th scope="col">Score</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+        <!-- <%  student.forEach(element => { %> -->
+    
+            <tr *ngFor="let item of collection" class="head">
+                <th>{{item.rollno}}</th>
+                <th>{{item.name}}</th>
+                <th>{{item.dob}}</th>
+                <th>{{item.score}}</th>
+                <td>
+                  <a routerLink="/update/{{item.id}}" ><img style="margin: 0px 5px;margin-left: -70px;" src="https://img.icons8.com/material-outlined/30/000000/edit.png"/></a>
+                  <a  (click)="deleteStudent(item)"><img style="margin: 0px 5px;" src="https://img.icons8.com/ios-glyphs/30/000000/filled-trash.png"/></a>
+                </td> 
+              </tr>
+        <!-- <%}) %> -->
+    </tbody>
+  </table>
+
+
+</div>

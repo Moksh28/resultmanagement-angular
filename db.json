@@ -1,0 +1,32 @@
+{
+  "studentDetails": [
+    {
+      "rollno": 1801259,
+      "name": "DHruv",
+      "dob": "2001-01-28",
+      "score": 21,
+      "id": 7
+    },
+    {
+      "rollno": 1050,
+      "name": "Moksh Mahajan",
+      "dob": "2000-06-28",
+      "score": 100,
+      "id": 8
+    },
+    {
+      "rollno": 1050,
+      "name": "Hritik",
+      "dob": "2000-06-12",
+      "score": 22,
+      "id": 9
+    },
+    {
+      "rollno": 100,
+      "name": "Vandana",
+      "dob": "2022-11-21",
+      "score": 500,
+      "id": 10
+    }
+  ]
+}

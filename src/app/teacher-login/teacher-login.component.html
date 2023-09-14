@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
+
+<a href="/" class="btn btn-info" style="margin-top:5px;">Back</a>
+<h3>Teacher Login</h3>
+<div class="teachLog">
+
+  <form [formGroup]="loginFrom" class="teachForm" (ngSubmit)="submit() " >
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password : </label>
+      <input type="password" name="password"  class="form-control" id="pass" formControlName="password" >
+      <br>
+      <!-- <input type="date" name="dob" formControlName="dob"> -->
+    </div>
+    <a><button type="submit" class="btn btn-primary">Submit</button></a>
+  </form>
+</div>
+
